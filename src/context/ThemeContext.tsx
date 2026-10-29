@@ -1,7 +1,6 @@
 'use client';
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import dynamic from 'next/dynamic';
 
 export interface Theme {
   id: string;

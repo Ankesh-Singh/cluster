@@ -85,7 +85,7 @@ export default function Home() {
                       <Link
                         key={item.label}
                         href={item.href}
-                        onClick={(e) => handleNavClick(e as any, item.href)}
+                        onClick={(e) => handleNavClick(e, item.href)}
                         className="block font-medium text-left align-top leading-[23.94px] whitespace-nowrap"
                         style={{
                           color:
@@ -100,7 +100,6 @@ export default function Home() {
                       </Link>
                     ))}
                   </nav>
-+
                   <div className="hidden md:block flex-shrink-0">
                     <a href="/login" className="inline-flex font-bold items-center justify-center max-w-full overflow-hidden relative bg-[rgb(30,_30,_30)] text-white gap-0 leading-[23.94px] pt-[14px] pr-7 pb-[14px] pl-7 z-[2] rounded-lg hover:bg-gray-800 transition-colors">
                       <div>Login / Sign Up</div>
@@ -119,7 +118,7 @@ export default function Home() {
                       <a
                         key={item.label}
                         href={item.href}
-                        onClick={(e) => handleNavClick(e as any, item.href)}
+                        onClick={(e) => handleNavClick(e, item.href)}
                         className="block font-medium py-2 px-3 hover:bg-gray-100 rounded"
                         style={{
                           color:

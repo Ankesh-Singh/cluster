@@ -37,10 +37,29 @@ Modern frontend-only Kanban Task Board with static authentication and localStora
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/cluster.git
+git clone https://github.com/Ankesh-Singh/cluster.git
 cd cluster
 npm install
-  ```
+```
+
+## Cloudflare Deployment
+
+This project exports to the static `out` directory and does not require a backend or environment variables.
+
+```bash
+npm ci
+npm run build
+npm run preview
+npx wrangler login
+npm run deploy
+```
+
+For a Git-connected Cloudflare Pages / Workers project, use:
+
+- Build command: `npm run build`
+- Build output directory: `out`
+- Root directory: `/`
+- Environment variables: none
 
 
 ## Contributing

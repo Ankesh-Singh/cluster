@@ -35,11 +35,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
  
   useEffect(() => {
     const stored = getItem<{ email: string } | null>(AUTH_KEY, null);
-    if (stored?.email) {
-      setIsAuthenticated(true);
-      setEmail(stored.email);
-    }
-    setLoading(false);
+    queueMicrotask(() => {
+      if (stored?.email) {
+        setIsAuthenticated(true);
+        setEmail(stored.email);
+      }
+      setLoading(false);
+    });
   }, []);
 
   const login = useCallback(

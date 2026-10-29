@@ -18,8 +18,10 @@ export default function LoginPage() {
   useEffect(() => {
     const saved = getItem<string | null>(REMEMBER_KEY, null);
     if (saved) {
-      setEmail(saved);
-      setRemember(true);
+      queueMicrotask(() => {
+        setEmail(saved);
+        setRemember(true);
+      });
     }
   }, []);
 

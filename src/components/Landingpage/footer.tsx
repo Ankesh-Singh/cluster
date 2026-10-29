@@ -30,39 +30,40 @@ const Footer = () => {
                 
                 <div className="flex items-center justify-start mb-9 gap-6">
                   <a
-                    href="https://ash-cv.vercel.app/"
+                    href="https://aanks.xyz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-start gap-6"
+                    title="Portfolio"
                   >
                     <div className="w-6 h-6 overflow-hidden">
                       <img
                         src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Ff0fbeecc7b2b07a1ba6f79bb8a09aac8faf7520a.svg?generation=1771149971915093&amp;alt=media"
-                        alt="Instagram"
+                        alt="Portfolio"
                         className="w-full h-full block"
                       />
                     </div>
                   </a>
                   
                   <a
-                    href="https://x.com/SinghAshir65848"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#"
                     className="flex items-center justify-start gap-6"
+                    title="Social"
                   >
                     <div className="w-6 h-6 overflow-hidden">
                       <img
                         src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fa2b14a847086f74bb51184ea381dfda09133717b.svg?generation=1771149971943755&amp;alt=media"
-                        alt="X"
+                        alt="Social"
                         className="w-full h-full block"
                       />
                     </div>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/ashirwad08singh/"
+                    href="https://www.linkedin.com/in/ankeshsingh07/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-start gap-6"
+                    title="LinkedIn"
                   >
                     <div className="w-6 h-6 overflow-hidden">
                       <img
@@ -137,14 +138,19 @@ const Footer = () => {
                     Contact
                   </div>
                   <div className="flex flex-col gap-3">
-                    <span className="block text-base leading-7">
-                      8421933430
-                    </span>
                     <a
-                      href="mailto:singhashirwad2003@gmail.com"
+                      href="mailto:contact@aanks.xyz"
                       className="block text-base leading-7"
                     >
-                      singhashirwad2003@gmail.com
+                      contact@aanks.xyz
+                    </a>
+                    <a
+                      href="https://aanks.xyz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-base leading-7"
+                    >
+                      aanks.xyz
                     </a>
                     <p className="text-base leading-7 max-w-[229px]">
                       Mumbai , India
@@ -160,12 +166,12 @@ const Footer = () => {
             <div>
               © 2025 Clsuter. All rights reserved.{" "}
               <a
-                href="https://github.com/Ethan4582"
+                href="https://github.com/Ankesh-Singh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline font-medium"
               >
-                Ashirwad Singh
+                Ankesh Singh
               </a>
             </div>
             
